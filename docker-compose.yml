@@ -2,13 +2,13 @@ version: "3"
 
 services:
     react1:
-        image: ahmedjarraya/react-containers
+        image: ahmedjarraya/react-containers-project
         container_name: react1
         ports:
             - "81:8080"
 
     web2:
-        image: ahmedjarraya/react-containers
+        image: ahmedjarraya/react-containers-react-containers-project
         container_name: react2
         ports:
             - "82:8080"
