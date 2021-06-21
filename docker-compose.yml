@@ -1,0 +1,22 @@
+version: "3"
+
+services:
+    react1:
+        image: ahmedjarraya/react-containers
+        container_name: react1
+        ports:
+            - "81:8080"
+
+    web2:
+        image: ahmedjarraya/react-containers
+        container_name: react2
+        ports:
+            - "82:8080"
+
+    haproxy:
+        build: ./haproxy
+        container_name: haproxy
+        ports:
+            - "80:8080"
+
+   
